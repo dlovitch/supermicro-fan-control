@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# Notes:
+# https://www.truenas.com/community/threads/script-to-control-fan-speed-in-response-to-hard-drive-temperatures.41294/
+# https://forums.servethehome.com/index.php?resources/supermicro-x9-x10-x11-fan-speed-control.20/
+# https://blog.pcfe.net/hugo/posts/2018-08-14-epyc-ipmi-fans/
+
 if [ "$EUID" -ne 0 ]; then
   echo "ERROR: this tool uses ipmitool which must be run as root"
   exit
