@@ -26,6 +26,8 @@ fi
 
 if [ "${1}" == "help" ]; then
   echo "${__help}"
+elif [ "${1}" == "list" ]; then
+  ipmitool sensor list all
 elif [ "${1}" == "check" ]; then
   ipmitool raw 0x30 0x45 0x00
 elif [ "${1}" == "standard" ]; then
