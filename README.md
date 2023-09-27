@@ -1,5 +1,7 @@
 # supermicro-fan-control
-Really simple bash script to manage Supermicro fan speed
+Really simple bash script to manage Supermicro fan speed.
+
+Note: this command must be run with root privileges as it uses `ipmitool`.
 
 ```
 Usage: supermicro-fan-control.sh [COMMAND]
