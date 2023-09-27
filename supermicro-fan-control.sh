@@ -14,6 +14,8 @@ __help="
 Usage: $(basename "${0}") [COMMAND]
 
 Commands:
+  list             List the current status of all sensors.
+  check            Returns the current fan state.
   standard         Standard mode. BMC controls both fan zones. CPU zone based on CPU temp with target speed 50%, peripheral zone based on PCH temp (target speed 50%).
   full (1):        Full mode. All fans running at 100%.
   optimal (2):     Optimal mode. BMC controls the CPU zone (target speed 30%), peripheral zone fixed at 30%.
