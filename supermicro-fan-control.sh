@@ -11,7 +11,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 __help="
-Usage: $(basename $0) [COMMAND]
+Usage: $(basename "${0}") [COMMAND]
 
 Commands:
   standard         Standard mode. BMC controls both fan zones. CPU zone based on CPU temp with target speed 50%, peripheral zone based on PCH temp (target speed 50%).
